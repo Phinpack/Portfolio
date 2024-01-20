@@ -1,12 +1,12 @@
-// App.js
 import React from 'react';
-import Header from './header';
+import Header from './Components/header';
+import UnderHeader from './Components/UnderHeader'
 
 function App() {
   return (
     <div className="App">
       <Header />
-      {/* Other components or content can be added here */}
+      <UnderHeader />
     </div>
   );
 }
