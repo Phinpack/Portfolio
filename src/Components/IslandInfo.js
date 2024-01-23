@@ -6,8 +6,8 @@ const IslandInfo = ({ videoSource, title, texts }) => {
   return (
     <div className='island-info-block-container'>
       <div className='island-word-container'>
-          <h1>{title}</h1>
-          <video className='island-video' autoPlay muted>
+          <h1 style={{marginBottom: '40px'}}>{title}</h1>
+          <video className='island-video' autoPlay muted loop>
                 <source src={videoSource} type="video/mp4" />
                 Your browser does not support the video tag.
           </video>

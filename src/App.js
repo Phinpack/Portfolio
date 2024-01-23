@@ -3,7 +3,8 @@ import Header from './Components/header';
 import NewHeader from './Components/NewHeader';
 import UnderHeader from './Components/UnderHeader'
 import InfoBlock from './Components/InfoBlock'
-import IslandWithVideos from './Components/IslandWithVideos';
+import IslandInfoParameters from './Components/IslandInfoParameters';
+import KeyFeatures from './Components/KeyFeatures';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       {/* <Header /> */}
       <UnderHeader />
       <InfoBlock />
-      <IslandWithVideos />
+      <IslandInfoParameters />
+      <KeyFeatures />
     </div>
   );
 }

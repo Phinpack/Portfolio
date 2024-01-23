@@ -10,6 +10,7 @@ const HeaderButton = ({buttonText}) => {
           border: 'none', 
           fontSize: '60px',
           transition: 'background-color 0.3s',
+          marginRight: '40px'
         }}
         onMouseEnter={(e) => (
           e.target.style.backgroundColor = 'rgba(186, 186, 186, 0.4)'
