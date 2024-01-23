@@ -3,7 +3,7 @@ import Header from './Components/header';
 import NewHeader from './Components/NewHeader';
 import UnderHeader from './Components/UnderHeader'
 import InfoBlock from './Components/InfoBlock'
-import IslandInfo from './Components/IslandInfo';
+import IslandWithVideos from './Components/IslandWithVideos';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       {/* <Header /> */}
       <UnderHeader />
       <InfoBlock />
-      <IslandInfo />
+      <IslandWithVideos />
     </div>
   );
 }
