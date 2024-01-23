@@ -1,0 +1,28 @@
+.info-block-container {
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+.word-container {
+    display: flex;
+}
+
+.word-container h1 {
+    margin-left: 5em;
+    margin-top: 1.7em;
+    margin-right: 2em;
+}
+
+.right-content {
+    margin-top: 5em;
+    margin-right: 10em;
+    margin-left: 20em;
+}
+
+.right-content h4 {
+    color: rgb(128, 128, 128);
+    margin-bottom: 2em;
+    margin-right: 5em;
+}
+

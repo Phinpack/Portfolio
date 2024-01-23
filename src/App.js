@@ -1,12 +1,18 @@
 import React from 'react';
 import Header from './Components/header';
+import NewHeader from './Components/NewHeader';
 import UnderHeader from './Components/UnderHeader'
+import InfoBlock from './Components/InfoBlock'
+import IslandInfo from './Components/IslandInfo';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <NewHeader />
+      {/* <Header /> */}
       <UnderHeader />
+      <InfoBlock />
+      <IslandInfo />
     </div>
   );
 }

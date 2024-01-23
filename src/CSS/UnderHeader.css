@@ -34,6 +34,9 @@
 .under-header-content {
   text-align: center;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .under-header-content h2 {

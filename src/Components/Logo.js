@@ -5,6 +5,7 @@ const Logo = () => {
   return (
     <Button
       style={{
+        color: 'black',
         fontSize: '49px',
         backgroundColor: 'rgba(0, 0, 0, 0.0)', 
         border: 'none'

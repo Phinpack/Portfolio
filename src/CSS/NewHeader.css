@@ -1,18 +1,19 @@
-.app-header {
+.new-app-header {
     background-color: #cccccc;
     color: white;
     padding: 10px;
     text-align: center;
   }
   
-  .header-container {
-    max-width: 1200px;
-    margin: 0 auto;
+  .new-header-container {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-  .button-container {
+  .new-button-container {
+    margin-left: 2em;
     margin-top: 10px;
   }

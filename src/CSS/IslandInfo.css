@@ -1,0 +1,22 @@
+.island-info-block-container {
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+.island-word-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.island-word-container h1 {
+    margin-top: 1.7em;
+}
+
+.flavor-text {
+    color: rgb(128, 128, 128);
+}
+
+.video {
+}
