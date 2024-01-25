@@ -11,7 +11,8 @@ const Logo = () => {
         backgroundColor: 'rgba(0, 0, 0, 0.0)', 
         border: 'none',
         marginLeft: '60px',
-      }}
+        filter: 'drop-shadow(6px 4px #000000)'
+}}
     >MetalityLabs
     </Button>
   )

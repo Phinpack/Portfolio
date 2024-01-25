@@ -44,5 +44,12 @@
 .under-header-content h2 {
   font-size: 80px;
   margin-bottom: 20px;
-  color: white; /* Set text color */
+  color: white;
+  filter: drop-shadow(1px 4px #000000);
+}
+
+.under-header-content h3 {
+  color: white;
+  max-width: 40em;
+  filter: drop-shadow(1px 2px #000000);
 }
