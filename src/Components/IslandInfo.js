@@ -1,10 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../CSS/IslandInfo.css';
+import Parallax from '../hooks/Parallax';
 
 const IslandInfo = ({ videoSource, title, texts }) => {
+  const parallaxElements = document.querySelectorAll('.parallax');
+  Parallax(parallaxElements, 0.3);
+
   return (
-    <div className='island-info-block-container'>
+    <div className='island-info-block-container '>
       <div className='island-word-container'>
           <h1 style={{marginBottom: '40px'}}>{title}</h1>
           <video className='island-video' autoPlay muted loop>

@@ -5,12 +5,14 @@ const Logo = () => {
   return (
     <Button
       style={{
-        color: 'black',
-        fontSize: '49px',
+        color: 'white',
+        fontSize: '55px',
+        fontWeight: '500',
         backgroundColor: 'rgba(0, 0, 0, 0.0)', 
-        border: 'none'
+        border: 'none',
+        marginLeft: '60px',
       }}
-    >Intelimmerse
+    >MetalityLabs
     </Button>
   )
 };

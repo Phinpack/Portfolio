@@ -6,23 +6,22 @@
 
 .word-container {
     display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .word-container h1 {
-    margin-left: 5em;
-    margin-top: 1.7em;
-    margin-right: 2em;
+    font-size: 50px;
+    max-width: 600px;
+    margin: 50px 0px 120px 200px;
 }
 
 .right-content {
-    margin-top: 5em;
-    margin-right: 10em;
-    margin-left: 20em;
+    margin-top: 50px;
 }
 
 .right-content h4 {
     color: rgb(128, 128, 128);
-    margin-bottom: 2em;
-    margin-right: 5em;
+    margin: 50px 200px 50px 100px
 }
 
