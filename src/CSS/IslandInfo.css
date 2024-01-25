@@ -2,27 +2,37 @@
     background-color: black;
     color: white;
     text-align: left;
+    padding-bottom: 40px;
 }
 
 .island-word-container {
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
 }
 
 .island-word-container h1 {
     margin-top: 1.7em;
+    margin-left: 40px;
+}
+
+.info-row {
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    align-items: center;
 }
 
 .flavor-text h4 {
     color: rgb(128, 128, 128);
     margin-bottom: 2em;
+    margin-left: 40px;
+    margin-right: 100px;
 }
 
 .island-video { 
     margin: auto;
     border-radius: 10px;
     height: 50%;
-    width: 70%;
+    width: 50%;
     margin-bottom: 40px;
 }

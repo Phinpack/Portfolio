@@ -5,19 +5,21 @@ import UnderHeader from './Components/UnderHeader'
 import InfoBlock from './Components/InfoBlock'
 import IslandInfoParameters from './Components/IslandInfoParameters';
 import KeyFeatures from './Components/KeyFeatures';
-import SmoothScroll from './hooks/SmoothScroll';
+// import SmoothScroll from './hooks/SmoothScroll';
+import Gallery from './Components/Gallery';
 
 function App() {
   return (
     <div className="App">
-      <SmoothScroll>
+      {/* <SmoothScroll> */}
         {/* <NewHeader /> */}
-        {/* <Header /> */}
+        <Header />
         <UnderHeader />
         <InfoBlock />
         <IslandInfoParameters />
         <KeyFeatures />
-      </SmoothScroll>
+        <Gallery />
+      {/* </SmoothScroll> */}
     </div>
   );
 }

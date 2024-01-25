@@ -6,7 +6,7 @@ const KeyFeatures = () => {
     <div className='key-features-container'>
         <div>
             <h1 style={{ fontSize: '70px', marginTop: '70px', marginBottom: '40px'}}>Key Features</h1>
-            <h3 style={{ marginTop: '40px', maxWidth: '1000px', margin: '0 auto', marginBottom: '100px'}}>Discover the exciting features that make Intelimmerse the ultimate metaverse experience.</h3>
+            <h3 style={{ marginTop: '40px', maxWidth: '1000px', margin: '0 auto', marginBottom: '100px', fontWeight: '400'}}>Discover the exciting features that make Intelimmerse the ultimate metaverse experience.</h3>
         </div>
         <div className='features-container'>
             <div>
