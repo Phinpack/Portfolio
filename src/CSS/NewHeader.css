@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 .new-app-header {
-    background-color: #b9b9b9;
-    color: white;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .new-header-container {
-    margin-bottom: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .new-button-container {
-    margin-left: 2em;
-    margin-top: 10px;
-  }
+   background-color: #b9b9b9;
+   color: white;
+   padding: 10px;
+   text-align: center;
+}
+
+.new-header-container {
+   margin-bottom: 1em;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.new-button-container {
+   margin-left: 2em;
+   margin-top: 10px;
+}
