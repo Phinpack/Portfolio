@@ -39,7 +39,7 @@ const ComingSoon = () => {
             style={{
                fontSize: "60px",
                marginTop: "70px",
-               marginBottom: "70px",
+               marginBottom: "100px",
                fontWeight: "700",
             }}
          >

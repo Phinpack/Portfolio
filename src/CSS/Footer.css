@@ -1,0 +1,12 @@
+.footer-container {
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+.footer-container h2 {
+   font-size: 25px;
+   font-weight: 400;
+   margin: 0;
+   padding-bottom: 40px;
+}

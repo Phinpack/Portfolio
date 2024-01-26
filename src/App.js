@@ -9,6 +9,7 @@ import KeyFeatures from "./Components/KeyFeatures";
 import Gallery from "./Components/Gallery";
 import FAQ from "./Components/FAQ";
 import ComingSoon from "./Components/ComingSoon";
+import Footer from "./Components/Footer";
 
 function App() {
    return (
@@ -23,6 +24,7 @@ function App() {
          <Gallery />
          <FAQ />
          <ComingSoon />
+         <Footer />
          {/* </SmoothScroll> */}
       </div>
    );

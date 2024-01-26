@@ -1,22 +1,23 @@
 import React from "react";
 import { Button } from "reactstrap";
 
-const Logo = () => {
+const FooterButton = ({ buttonText }) => {
    return (
       <Button
+         outline
          style={{
             color: "white",
-            fontSize: "50px",
-            fontWeight: "1000",
-            backgroundColor: "rgba(0, 0, 0, 0.0)",
             border: "none",
-            marginLeft: "60px",
+            fontSize: "35px",
             // filter: "drop-shadow(2px 4px #000000)",
+            marginTop: "30px",
+            marginRight: "20px",
+            marginBottom: "30px",
          }}
       >
-         MetalityLabs
+         {buttonText}
       </Button>
    );
 };
 
-export default Logo;
+export default FooterButton;
