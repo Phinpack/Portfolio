@@ -1,0 +1,28 @@
+.coming-soon-container {
+   background-color: rgb(32, 0, 23);
+   color: white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.time-row {
+   display: flex;
+   flex-direction: row;
+   text-align: center;
+   margin-bottom: 70px;
+}
+
+.time-row h1 {
+   font-size: 70px;
+   font-weight: 700;
+}
+
+.time-row h2 {
+   font-weight: 100;
+}
+
+.time-column {
+   padding-left: 100px;
+   padding-right: 100px;
+}

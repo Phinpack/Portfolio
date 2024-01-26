@@ -4,7 +4,7 @@
    left: 0;
    width: 100%;
    /* background: linear-gradient(to left, rgb(0, 19, 108, .7), rgb(10, 26, 39, .7)); */
-   background-color: rgba(5, 26, 122, 0.8);
+   background-color: rgb(0, 19, 108, 0.8);
    color: white;
    text-align: center;
    z-index: 3;

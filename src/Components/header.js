@@ -28,7 +28,7 @@ const Header = () => {
                      sx={{
                         color: "white",
                         marginLeft: "10px",
-                        marginBottom: "5px",
+                        filter: "drop-shadow(2px 3px #000000)",
                      }}
                   />
                </IconButton>
@@ -41,7 +41,7 @@ const Header = () => {
                         fontSize: "30px",
                         color: "white",
                         marginLeft: "15px",
-                        marginBottom: "4px",
+                        filter: "drop-shadow(2px 3px #000000)",
                      }}
                   />
                </IconButton>
@@ -54,7 +54,7 @@ const Header = () => {
                         fontSize: "35px",
                         color: "white",
                         marginLeft: "10px",
-                        marginBottom: "5px",
+                        filter: "drop-shadow(2px 3px #000000)",
                      }}
                   />
                </IconButton>
@@ -67,7 +67,7 @@ const Header = () => {
                         fontSize: "25px",
                         color: "white",
                         marginLeft: "10px",
-                        marginBottom: "5px",
+                        filter: "drop-shadow(2px 3px #000000)",
                      }}
                   />
                </IconButton>

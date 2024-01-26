@@ -9,8 +9,9 @@ const HeaderButton = ({ buttonText }) => {
             color: "white",
             border: "none",
             fontSize: "35px",
-            fontWeight: "500",
+            fontWeight: "700",
             transition: "background-color 0.3s",
+            filter: "drop-shadow(2px 4px #000000)",
             marginRight: "20px",
          }}
          onMouseEnter={(e) =>

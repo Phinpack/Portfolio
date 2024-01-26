@@ -6,8 +6,8 @@ const Logo = () => {
       <Button
          style={{
             color: "white",
-            fontSize: "55px",
-            fontWeight: "500",
+            fontSize: "50px",
+            fontWeight: "1000",
             backgroundColor: "rgba(0, 0, 0, 0.0)",
             border: "none",
             marginLeft: "60px",

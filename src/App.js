@@ -8,6 +8,7 @@ import KeyFeatures from "./Components/KeyFeatures";
 // import SmoothScroll from "./hooks/SmoothScroll";
 import Gallery from "./Components/Gallery";
 import FAQ from "./Components/FAQ";
+import ComingSoon from "./Components/ComingSoon";
 
 function App() {
    return (
@@ -21,6 +22,7 @@ function App() {
          <KeyFeatures />
          <Gallery />
          <FAQ />
+         <ComingSoon />
          {/* </SmoothScroll> */}
       </div>
    );
