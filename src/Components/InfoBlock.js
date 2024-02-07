@@ -9,24 +9,31 @@ const InfoBlock = () => {
    return (
       <div className="info-block-container ">
          <div className="word-container">
-            <h1>Unleash Your Imagination in the Intelimmerse</h1>
+            <h1>About Me</h1>
             <div className="right-content">
                <h4>
-                  Welcome to a realm of endless possibilities unlocking the
-                  potential of a digital universe bringing tangible benefits to
-                  the real world.
+                  I am a recent graduate with a Bachelor of Science in Computer
+                  Science, achieving a 3.5 GPA. Eager to embark on a journey in
+                  the tech industry, I am actively seeking an entry-level
+                  software engineering position where I can apply my academic
+                  knowledge and practical skills to contribute to innovative
+                  projects and solutions.
                </h4>
                <h4>
-                  It's a digital world providing an immersive experience
-                  combining both education and play, offering opportunities for
-                  personal growth, social interaction, and enjoyable experiences
-                  that transcend geographical boundaries.
+                  Throughout my academic journey, I've cultivated a strong
+                  foundation in computer science principles, including
+                  algorithms, data structures, and software development
+                  methodologies. My coursework has equipped me with proficiency
+                  in various programming languages, with a particular focus on
+                  JavaScript, which I find both versatile and exciting.
                </h4>
                <h4>
-                  We embrace social interaction and connecting people in
-                  meaningful ways through virtual communities, social events,
-                  and platforms that facilitate real-time interactions and
-                  foster a sense of belonging.
+                  During my studies, I engaged in hands-on projects that honed
+                  my problem-solving abilities and fostered a collaborative
+                  mindset. From developing mobile applications using React
+                  Native to contributing to web-based projects, I've gained
+                  practical experience in translating theoretical concepts into
+                  real-world solutions.
                </h4>
             </div>
          </div>

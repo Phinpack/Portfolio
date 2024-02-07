@@ -1,23 +1,24 @@
 import React, { useEffect } from "react";
 import "../CSS/UnderHeader.css";
-import Parallax from "../hooks/Parallax";
+// import Parallax from "../hooks/Parallax";
+import mypicture from "../images/me.JPG";
 
 const UnderHeader = () => {
-   const parallaxElements = document.querySelectorAll(".parallax");
-   Parallax(parallaxElements, ".15");
+   // const parallaxElements = document.querySelectorAll(".parallax");
+   // Parallax(parallaxElements, ".5");
 
    return (
       <section className="under-header">
          <div className="overlay"></div>
          <div className="blur"></div>
-         <div className="under-header-content parallax">
-            <h2>Enter Intelimmerse</h2>
-            <h3>
-               Welcome to a realm of endless possibilities - immersive
-               experiences offering opportunities for personal growth, social
-               interaction, and socializing and playing that transcend
-               geographical boundaries
-            </h3>
+         <div className="under-header-content ">
+            <div className="my-picture-container">
+               <img className="my-picture" src={mypicture}></img>
+            </div>
+            <div className="words">
+               <h2>I'm Jordan Hannon</h2>
+               <h3>Recent graduate seeking a software engineering position</h3>
+            </div>
          </div>
       </section>
    );

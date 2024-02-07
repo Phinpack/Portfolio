@@ -14,7 +14,7 @@ const Logo = () => {
             // filter: "drop-shadow(2px 4px #000000)",
          }}
       >
-         MetalityLabs
+         Jordan Hannon
       </Button>
    );
 };
