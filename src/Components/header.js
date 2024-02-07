@@ -16,10 +16,10 @@ const Header = () => {
          <div className="header-container">
             <Logo />
             <div className="button-container">
-               <HeaderButton buttonText={"Play"} />
-               <HeaderButton buttonText={"Learn"} />
-               <HeaderButton buttonText={"Live"} />
-               <HeaderButton buttonText={"About Us"} />
+               <HeaderButton buttonText={"Play"} targetY={1855} />
+               <HeaderButton buttonText={"Learn"} targetY={2670} />
+               <HeaderButton buttonText={"Live"} targetY={3485} />
+               <HeaderButton buttonText={"About Us"} to={"/about"} />
                <IconButton>
                   {/* onClick={() => {
               

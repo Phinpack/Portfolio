@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "reactstrap";
+import "../CSS/FooterButton.css";
 
 const FooterButton = ({ buttonText }) => {
    return (
