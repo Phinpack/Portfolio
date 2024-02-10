@@ -14,8 +14,8 @@ const Header = () => {
             <Logo />
             <div className="button-container">
                <HeaderButton buttonText={"About Me"} targetY={760} />
-               <HeaderButton buttonText={"Experience"} targetY={1695} />
-               <HeaderButton buttonText={"Projects"} targetY={2560} />
+               <HeaderButton buttonText={"Experience"} targetY={1565} />
+               <HeaderButton buttonText={"Projects"} targetY={2360} />
                <HeaderButton buttonText={"Contact Me"} to={"/about"} />
                <IconButton>
                   {/* onClick={() => {

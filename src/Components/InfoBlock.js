@@ -1,6 +1,7 @@
 import React from "react";
 import "../CSS/InfoBlock.css";
 import Parallax from "../hooks/Parallax";
+import UCFlogo from "../images/ucflogo.png";
 
 const InfoBlock = () => {
    const parallaxElements = document.querySelectorAll(".parallax");
@@ -10,6 +11,7 @@ const InfoBlock = () => {
       <div className="info-block-container ">
          <div className="word-container">
             <h1>About Me</h1>
+            <img className="ucfimage" src={UCFlogo}></img>
             <div className="right-content">
                <h4>
                   I am a recent graduate with a Bachelor of Science in Computer

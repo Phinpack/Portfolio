@@ -1,6 +1,8 @@
 import React from "react";
 import "../CSS/Experience.css";
 import Parallax from "../hooks/Parallax";
+import UnityLogo from "../images/unitylogo.png";
+import ReactLogo from "../images/reactlogo.png";
 
 const Experience = () => {
    const parallaxElements = document.querySelectorAll(".parallax");
@@ -55,6 +57,8 @@ const Experience = () => {
                   new heights.
                </h4>
             </div>
+            <img className="unity-logo" src={UnityLogo}></img>
+            <img className="react-logo" src={ReactLogo}></img>
          </div>
       </div>
    );
