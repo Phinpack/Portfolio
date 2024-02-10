@@ -8,6 +8,7 @@ import Gallery from "../Components/Gallery";
 import FAQ from "../Components/FAQ";
 import ComingSoon from "../Components/ComingSoon";
 import Footer from "../Components/Footer";
+import Experience from "../Components/Experience";
 
 const Index = () => {
    return (
@@ -16,6 +17,7 @@ const Index = () => {
          <Header />
          <UnderHeader />
          <InfoBlock />
+         <Experience />
          <IslandInfoParameters />
          <KeyFeatures />
          <Gallery />
