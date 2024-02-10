@@ -1,10 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
-
-body {
+/* body {
    margin: 0;
    font-family: "Montserrat", sans-serif;
    font-optical-sizing: auto;
-   font-weight: 400;
    font-style: normal;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
@@ -13,4 +10,11 @@ body {
 code {
    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
       monospace;
-}
+} */
+
+/* @font-face {
+   font-family: "Monserrat";
+   src:
+      local("Montserrat"),
+      url("./fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+} */

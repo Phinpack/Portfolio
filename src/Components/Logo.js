@@ -7,11 +7,10 @@ const Logo = () => {
          style={{
             color: "white",
             fontSize: "50px",
-            fontWeight: "1000",
+            fontWeight: "700",
             backgroundColor: "rgba(0, 0, 0, 0.0)",
             border: "none",
             marginLeft: "60px",
-            // filter: "drop-shadow(2px 4px #000000)",
          }}
       >
          Jordan Hannon
