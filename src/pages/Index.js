@@ -20,9 +20,9 @@ const Index = () => {
          <Experience />
          <IslandInfoParameters />
          <KeyFeatures />
-         <Gallery />
-         <FAQ />
-         <ComingSoon />
+         {/* <Gallery /> */}
+         {/* <FAQ /> */}
+         {/* <ComingSoon /> */}
          <Footer />
       </div>
    );

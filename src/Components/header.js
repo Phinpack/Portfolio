@@ -16,6 +16,7 @@ const Header = () => {
                <HeaderButton buttonText={"About Me"} targetY={890} />
                <HeaderButton buttonText={"Experience"} targetY={1775} />
                <HeaderButton buttonText={"Projects"} targetY={2620} />
+               <HeaderButton buttonText={"Skills"} targetY={5190} />
                <HeaderButton buttonText={"Contact Me"} to={"/about"} />
                <IconButton>
                   {/* onClick={() => {

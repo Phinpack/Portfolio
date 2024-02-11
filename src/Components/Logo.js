@@ -2,8 +2,13 @@ import React from "react";
 import { Button } from "reactstrap";
 
 const Logo = () => {
+   const refreshPage = () => {
+      window.scrollTo(0, 0);
+   };
+
    return (
       <Button
+         onClick={refreshPage}
          style={{
             color: "white",
             fontSize: "50px",

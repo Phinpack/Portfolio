@@ -6,10 +6,9 @@ const Footer = () => {
    return (
       <div className="footer-container">
          <FooterButton buttonText={"Home"} />
-         <FooterButton buttonText={"About"} />
-         <FooterButton buttonText={"Blog"} />
          <FooterButton buttonText={"Contact"} />
-         <h2>© 2024 Intelimmerse. All rights reserved.</h2>
+         <FooterButton buttonText={"LinkedIn"} />
+         <FooterButton buttonText={"GitHub"} />
       </div>
    );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import IslandInfo from "./IslandInfo";
+import spotifyVideo from "../videos/TrendifyWeb.mp4";
 
 const IslandInfoParameters = () => {
    const islandVideo1 =
@@ -8,29 +9,33 @@ const IslandInfoParameters = () => {
       "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4";
    const islandVideo3 =
       "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4";
-   const title1 = "Relax & Play in Intelimmerse";
-   const title2 = "Immersive Learning";
-   const title3 = "Live";
+   const title1 = "Senior Design Application - CuttingBoard";
+   const title2 = "Spotify API Application - Trendify";
+   const title3 = "Unity Engine Game - Subliminal";
    const texts1 = [
-      "Immerse yourself in the thrill of the Entertainment District, where the night sparkles with a blend of excitement - from the glamour of the casino to the nostalgic echoes of the bowling alley and the pulsating energy of the arcade. Elevate your experience with our Inteliexperiences, weaving cutting-edge technology into every moment",
-      "In the Sports District, the field is yours to conquer! Engage in a symphony of athleticism as you explore diverse sports arenas, from virtual soccer to adrenaline-pumping racing. Whether you are a casual observer or a competitive player, our Sports District offers an immersive playground for enthusiasts of every kind.",
-      "Unleash the adventurer in you - where the Intelimmerse meets entertainment, and every experience is a masterpiece of digital wonder.",
+      "As the front-end developer for my Senior Design project, I spearheaded the development of a cross-platform mobile application using Flutter, leveraging its single-codebase approach to efficiently create a seamless user experience for both Android and iOS platforms.",
+      "Collaborating closely with team members, including backend developers and designers, we integrated Firebase Authentication, Realtime Database, and Firebase Storage to enhance functionality and data management.",
+      "Through meticulous planning, agile development practices, and effective communication, our team successfully delivered a polished product within the project timeline, showcasing our collective dedication and expertise in bringing innovative solutions to fruition",
    ];
    const texts2 = [
-      "Embark on a transcendent journey through the heart of Perdisco Island, where the allure of an island unites the tapestries of the world. Explore diverse nations, guided by AI companions, as history comes alive.",
-      "From the mystique of Ancient Egypt to the timeless elegance of Japan, let the immersive landscapes unveil the captivating stories of civilizations, creating a virtual odyssey unlike any other.",
-      "Welcome to the Perdisco Island - where the past converges with the future, and every step unveils a chapter in the grand narrative of human history.",
+      "In our Spotify API application project, I took on the role of a front-end developer, leading the design and implementation of the website using React and the mobile application using React Native.",
+      "Leveraging the Spotify API, we authenticated users and obtained necessary access tokens to access their listening data and display that data to the user. We deployed the application using Heroku, and used the CSS Tailwind framework for website styling, ensuring a seamless and visually appealing user experience across platforms.",
+      "This project was a collaborative effort, with team members contributing their expertise in backend development, API integration, and UI/UX design, resulting in a successful implementation that showcased our collective ingenuity and dedication to creating a unique application.",
    ];
    const texts3 = [
-      "Discover a world of endless possibilities in our metaverse, where you can own and reside in virtual properties that transcend imagination.",
-      "Purchase your dream digital home and immerse yourself in a realm where each property is a unique expression of your virtual identity. Live, create, and explore in a metaverse designed for those seeking a personalized and limitless digital lifestyle.",
-      "In Metality Place, embrace your entrepreneurial spirit with Intelimmerse! Our platform offers an incredible opportunity for visitors, featuring 616 open lots available for purchase. Here, you can create, build, and market your very own business from the ground up, harnessing its limitless potential. We are committed to providing assistance in building and customizing your business, and with multiple marketing and promotion options, you can thrive in the ever-growing market. What's more, our integrated payment system ensures smooth transactions for all businesses utilizing our platform.",
+      "In our Unity Engine project, Subliminal, I served as a key member responsible for the development and maintenance of the game codebase. Leveraging Unity's tilemap and canvas system, I efficiently constructed and populated game levels, ensuring smooth gameplay experiences for players.",
+      "Additionally, I played a pivotal role in creating visually appealing game assets, including backgrounds, characters, and objects, aligning them with the game's art style and design vision.",
+      "Also, as the creative lead for the project, I came up with the game's story from scratch, thinking up interesting characters, cool plot twists, and exciting adventures to make the game really fun and engaging for players.",
+      "Video to the left is of our professor giving a live demo of our game!",
    ];
+   const googleSlideURL =
+      "https://docs.google.com/presentation/d/1ilqac5S4u_GMvwCVlrFpqgk9Reb4niPCvKiZdhxG130/edit#slide=id.p1";
+
    return (
       <div>
-         <IslandInfo videoSource={islandVideo1} title={title1} texts={texts1} />
-         <IslandInfo videoSource={islandVideo2} title={title2} texts={texts2} />
-         <IslandInfo videoSource={islandVideo3} title={title3} texts={texts3} />
+         <IslandInfo title={title1} texts={texts1} googleURL={googleSlideURL} />
+         <IslandInfo videoSource={spotifyVideo} title={title2} texts={texts2} />
+         <IslandInfo title={title3} texts={texts3} />
       </div>
    );
 };
