@@ -3,7 +3,7 @@ import Header from "../Components/header";
 import ContactForm from "../Components/ContactForm";
 import Footer from "../Components/Footer";
 
-const AboutUs = () => {
+const ContactPage = () => {
    return (
       <div>
          <Header />
@@ -13,4 +13,4 @@ const AboutUs = () => {
    );
 };
 
-export default AboutUs;
+export default ContactPage;

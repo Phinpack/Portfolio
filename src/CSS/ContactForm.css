@@ -34,19 +34,27 @@
    margin-bottom: 40px;
    margin-left: 20px;
    padding: 10px;
-   width: 200px;
+   width: 400px;
+   height: 60px;
    color: black;
-   font-weight: 700;
+   font-weight: bolder;
+   border: 1px solid #ffffff;
+   border-radius: 10px;
+   background-color: #f8f8f8;
+   font-size: 20px;
 }
 
 .form-no-submit textarea {
    margin-bottom: 40px;
    margin-left: 20px;
    padding: 10px;
-   width: 400px;
-   height: 181px;
-   color: black;
-   font-weight: 700;
+   width: 600px;
+   height: 205px;
+   font-weight: bolder;
+   border: 1px solid #ffffff;
+   border-radius: 10px;
+   background-color: #f8f8f8;
+   font-size: 20px;
 }
 
 .form-name-email-container {
@@ -55,7 +63,18 @@
 }
 
 .submit-btn {
-   width: 100px;
-   font-weight: 700;
+   width: 120px;
    height: 50px;
+   font-size: 20px;
+   background-color: #043687; /* Blue background color */
+   color: white; /* White text color */
+   border: none;
+   border-radius: 5px; /* Rounded corners */
+   font-weight: bold;
+   cursor: pointer;
+   transition: background-color 0.2s; /* Smooth color transition */
+}
+
+.submit-btn:hover {
+   background-color: #0061ff; /* Darker blue color on hover */
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import IslandInfo from "./IslandInfo";
-import spotifyVideo from "../videos/TrendifyWeb.mp4";
+// import spotifyVideo from "../videos/TrendifyVideo.mp4";
 
 const IslandInfoParameters = () => {
    const islandVideo1 =
@@ -34,7 +34,7 @@ const IslandInfoParameters = () => {
    return (
       <div>
          <IslandInfo title={title1} texts={texts1} googleURL={googleSlideURL} />
-         <IslandInfo videoSource={spotifyVideo} title={title2} texts={texts2} />
+         <IslandInfo title={title2} texts={texts2} />
          <IslandInfo title={title3} texts={texts3} />
       </div>
    );
