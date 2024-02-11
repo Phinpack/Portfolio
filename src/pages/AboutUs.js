@@ -1,10 +1,14 @@
 import React from "react";
+import Header from "../Components/header";
+import ContactForm from "../Components/ContactForm";
+import Footer from "../Components/Footer";
 
 const AboutUs = () => {
    return (
       <div>
-         <h1>About Us </h1>
-         {/* Add content for your About Us page */}
+         <Header />
+         <ContactForm />
+         <Footer />
       </div>
    );
 };
