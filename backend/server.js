@@ -3,39 +3,65 @@ require("dotenv").config();
 const express = require("express");
 const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
+const { google } = require("googleapis");
+
+const oauth2Client = new google.auth.OAuth2(
+   process.env.CLIENT_ID,
+   process.env.CLIENT_SECRET,
+   "https://developers.google.com/oauthplayground"
+);
+oauth2Client.setCredentials({ refresh_token: process.env.REFRESH_TOKEN });
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
-app.post("/send-email", (req, res) => {
-   const { name, email, message } = req.body;
+app.post("/send-email", async (req, res) => {
+   const { name, subject, message } = req.body;
+   console.log(req.body);
 
-   const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-         user: process.env.EMAIL_USER,
-         pass: process.env.EMAIL_PASS,
-      },
-   });
+   try {
+      // Get access token
+      const accessToken = await oauth2Client.getAccessToken();
 
-   const mailOptions = {
-      from: "your-email@gmail.com",
-      to: "recipient-email@example.com",
-      subject: "New Contact Form Submission",
-      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
-   };
+      // Create transporter with OAuth2
+      const transporter = nodemailer.createTransport({
+         service: "gmail",
+         auth: {
+            type: "OAuth2",
+            user: process.env.EMAIL_USER,
+            clientId: process.env.CLIENT_ID,
+            clientSecret: process.env.CLIENT_SECRET,
+            refreshToken: process.env.REFRESH_TOKEN,
+            accessToken: accessToken,
+            tls: {
+               rejectUnauthorized: false,
+            },
+         },
+      });
 
-   transporter.sendMail(mailOptions, (error, info) => {
-      if (error) {
-         console.error("Error sending email:", error);
-         res.status(500).send("Error sending email");
-      } else {
-         console.log("Email sent:", info.response);
-         res.status(200).send("Email sent successfully");
-      }
-   });
+      // Send mail
+      const mailOptions = {
+         from: process.env.EMAIL_USER,
+         to: process.env.EMAIL_USER,
+         subject: subject,
+         text: `Name: ${name}\nMessage: ${message}`,
+      };
+
+      transporter.sendMail(mailOptions, (error, info) => {
+         if (error) {
+            console.error("Error sending email:", error);
+            res.status(500).send("Error sending email");
+         } else {
+            console.log("Email sent:", info.response);
+            res.status(200).send("Email sent successfully");
+         }
+      });
+   } catch (error) {
+      console.error("Error fetching access token:", error);
+      res.status(500).send("Error fetching access token");
+   }
 });
 
 app.listen(PORT, () => {

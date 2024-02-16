@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "../CSS/ContactForm.css";
+import axios from "axios";
 
 const ContactForm = () => {
    const [formData, setFormData] = useState({
       name: "",
-      email: "",
+      subject: "",
       message: "",
    });
 
@@ -16,14 +17,16 @@ const ContactForm = () => {
       });
    };
 
-   const handleSubmit = (e) => {
+   const handleSubmit = async (e) => {
       e.preventDefault();
-      console.log("Form submitted:", formData);
-      setFormData({
-         name: "",
-         email: "",
-         message: "",
-      });
+      try {
+         const response = await axios.post("/send-email", formData);
+         console.log(response.data);
+         // Optionally, display a success message to the user
+      } catch (error) {
+         console.error("Error sending email:", error);
+         // Optionally, display an error message to the user
+      }
    };
 
    return (
@@ -41,12 +44,12 @@ const ContactForm = () => {
                         onChange={handleChange}
                      />
                   </div>
-                  <div className="form-email">
-                     <label>Email:</label>
+                  <div className="form-subject">
+                     <label>Subject:</label>
                      <input
-                        type="email"
-                        name="email"
-                        value={formData.email}
+                        type="subject"
+                        name="subject"
+                        value={formData.subject}
                         onChange={handleChange}
                      />
                   </div>
