@@ -5,7 +5,7 @@ import "../CSS/Header.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import HeaderButton from "./HeaderButton";
 import { IconButton } from "@mui/material";
-import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Link } from "react-router-dom";
 
@@ -13,7 +13,9 @@ const Header = () => {
    return (
       <header className="app-header">
          <div className="header-container">
-            <Logo />
+            <Link to={"/"}>
+               <Logo />
+            </Link>
             <div className="button-container">
                <HeaderButton buttonText={"About Me"} targetY={890} />
                <HeaderButton buttonText={"Experience"} targetY={1775} />
@@ -23,7 +25,6 @@ const Header = () => {
                <Link to={"/contact"}>
                   <Button
                      outline
-                     to={"/about"}
                      style={{
                         color: "white",
                         border: "none",
@@ -43,31 +44,32 @@ const Header = () => {
                      Contact Me
                   </Button>
                </Link>
-               <IconButton>
-                  {/* onClick={() => {
-              
-            }} */}
-                  <LinkedInIcon
-                     sx={{
-                        color: "white",
-                        marginLeft: "10px",
-                        // filter: "drop-shadow(2px 3px #000000)",
-                     }}
-                  />
-               </IconButton>
-               <IconButton>
-                  {/* onClick={() => {
-              
-            }} */}
-                  <MailOutlineOutlinedIcon
-                     sx={{
-                        fontSize: "30px",
-                        color: "white",
-                        marginLeft: "15px",
-                        // filter: "drop-shadow(2px 3px #000000)",
-                     }}
-                  />
-               </IconButton>
+               <a
+                  href="https://www.linkedin.com/in/jordan-hannon-40018027b/"
+                  target="_blank"
+               >
+                  <IconButton>
+                     <LinkedInIcon
+                        sx={{
+                           fontSize: "35px",
+                           color: "white",
+                           // filter: "drop-shadow(2px 3px #000000)",
+                        }}
+                     />
+                  </IconButton>
+               </a>
+               <a href="https://github.com/Phinpack" target="_blank">
+                  <IconButton>
+                     <GitHubIcon
+                        sx={{
+                           fontSize: "30px",
+                           color: "white",
+                           marginLeft: "10px",
+                           // filter: "drop-shadow(2px 3px #000000)",
+                        }}
+                     />
+                  </IconButton>
+               </a>
             </div>
          </div>
       </header>

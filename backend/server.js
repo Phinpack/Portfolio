@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 
 app.post("/send-email", async (req, res) => {
-   const { name, subject, message } = req.body;
+   const { name, email, message } = req.body;
    console.log(req.body);
 
    try {
@@ -45,8 +45,8 @@ app.post("/send-email", async (req, res) => {
       const mailOptions = {
          from: process.env.EMAIL_USER,
          to: process.env.EMAIL_USER,
-         subject: subject,
-         text: `Name: ${name}\nMessage: ${message}`,
+         email: email,
+         text: `Name: ${name}\n\nEmail: ${email}\n\nMessage: ${message}`,
       };
 
       transporter.sendMail(mailOptions, (error, info) => {

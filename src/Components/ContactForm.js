@@ -5,9 +5,11 @@ import axios from "axios";
 const ContactForm = () => {
    const [formData, setFormData] = useState({
       name: "",
-      subject: "",
+      email: "",
       message: "",
    });
+
+   const [formSubmitted, setFormSubmitted] = useState(false);
 
    const handleChange = (e) => {
       const { name, value } = e.target;
@@ -19,14 +21,23 @@ const ContactForm = () => {
 
    const handleSubmit = async (e) => {
       e.preventDefault();
+      console.log(formData);
       try {
-         const response = await axios.post("/send-email", formData);
+         const response = await axios.post(
+            "https://us-central1-portfolio-ab484.cloudfunctions.net/submitForm",
+            formData,
+            { headers: { "Content-Type": "application/json" } }
+         );
          console.log(response.data);
-         // Optionally, display a success message to the user
       } catch (error) {
          console.error("Error sending email:", error);
-         // Optionally, display an error message to the user
       }
+      setFormData({
+         name: "",
+         email: "",
+         message: "",
+      });
+      setFormSubmitted(true);
    };
 
    return (
@@ -44,12 +55,12 @@ const ContactForm = () => {
                         onChange={handleChange}
                      />
                   </div>
-                  <div className="form-subject">
-                     <label>Subject:</label>
+                  <div className="form-email">
+                     <label>Email:</label>
                      <input
-                        type="subject"
-                        name="subject"
-                        value={formData.subject}
+                        type="email"
+                        name="email"
+                        value={formData.email}
                         onChange={handleChange}
                      />
                   </div>
@@ -63,9 +74,16 @@ const ContactForm = () => {
                   />
                </div>
             </div>
-            <button className="submit-btn" type="submit">
-               Submit
-            </button>
+            <div className="submit-container">
+               <button className="submit-btn" type="submit">
+                  Submit
+               </button>
+               {formSubmitted && (
+                  <span style={{ marginLeft: "10px", fontSize: "20px" }}>
+                     Form submitted!
+                  </span>
+               )}
+            </div>
          </form>
       </div>
    );
