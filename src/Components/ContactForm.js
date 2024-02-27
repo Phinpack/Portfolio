@@ -73,6 +73,13 @@ const ContactForm = () => {
                      onChange={handleChange}
                   />
                </div>
+               <input
+                  type="text"
+                  name="honeypot"
+                  value={formData.honeypot}
+                  onChange={handleChange}
+                  style={{ display: "none" }}
+               />
             </div>
             <div className="submit-container">
                <button className="submit-btn" type="submit">

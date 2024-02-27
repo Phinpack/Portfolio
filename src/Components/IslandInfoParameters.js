@@ -1,14 +1,8 @@
 import React from "react";
 import IslandInfo from "./IslandInfo";
-// import spotifyVideo from "../videos/TrendifyVideo.mp4";
+import spotifyVideo from "../videos/TrendifyVideo.mp4";
 
 const IslandInfoParameters = () => {
-   const islandVideo1 =
-      "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
-   const islandVideo2 =
-      "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4";
-   const islandVideo3 =
-      "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4";
    const title1 = "Senior Design Application - CuttingBoard";
    const title2 = "Spotify API Application - Trendify";
    const title3 = "Unity Engine Game - Subliminal";
@@ -31,11 +25,18 @@ const IslandInfoParameters = () => {
    const googleSlideURL =
       "https://docs.google.com/presentation/d/1ilqac5S4u_GMvwCVlrFpqgk9Reb4niPCvKiZdhxG130/edit#slide=id.p1";
 
+   const subliminalVideoURL =
+      "https://drive.google.com/file/d/1NahrITzFuexm_k0DY5e_ngmMsIXEps2H/preview?usp=sharing";
+
    return (
       <div>
          <IslandInfo title={title1} texts={texts1} googleURL={googleSlideURL} />
-         <IslandInfo title={title2} texts={texts2} />
-         <IslandInfo title={title3} texts={texts3} />
+         <IslandInfo videoSource={spotifyVideo} title={title2} texts={texts2} />
+         <IslandInfo
+            title={title3}
+            texts={texts3}
+            googleURL={subliminalVideoURL}
+         />
       </div>
    );
 };

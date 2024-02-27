@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "reactstrap";
 import { Link, useLocation } from "react-router-dom";
+import "../CSS/HeaderButton.css";
 
 const HeaderButton = ({ buttonText, targetY }) => {
    const location = useLocation();
@@ -23,14 +24,7 @@ const HeaderButton = ({ buttonText, targetY }) => {
    return (
       <Button
          outline
-         style={{
-            color: "white",
-            border: "none",
-            fontSize: "35px",
-            fontWeight: "700",
-            transition: "background-color 0.3s",
-            marginRight: "20px",
-         }}
+         className="header-button"
          onMouseEnter={(e) =>
             (e.target.style.backgroundColor = "rgba(186, 186, 186, 0.4)")
          }

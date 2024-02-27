@@ -30,7 +30,15 @@ const transporter = nodemailer.createTransport({
 
 exports.submitForm = functions.https.onRequest(async (req, res) => {
    cors(req, res, async () => {
-      const { name, email, message } = req.body;
+      const { name, email, message, honeypot } = req.body;
+
+      // Added for contact spam
+      if (honeypot) {
+         console.log("Submission detected as spam.");
+         return res
+            .status(400)
+            .send("Submission ignored due to suspected spam.");
+      }
 
       await transporter.sendMail({
          from: process.env.EMAIL_USER,

@@ -18,6 +18,9 @@ const UnderHeader = () => {
             <div className="words">
                <h2>I'm Jordan Hannon</h2>
                <h3>Recent graduate seeking a software engineering position</h3>
+               <h3 style={{ fontSize: "20px", marginTop: "30px" }}>
+                  Email - jordanhannon01@gmail.com
+               </h3>
             </div>
          </div>
       </section>
