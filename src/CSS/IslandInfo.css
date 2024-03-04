@@ -11,7 +11,8 @@
 }
 
 .island-word-container h1 {
-   margin-bottom: 1.7em;
+   margin-bottom: 40px;
+   font-size: 60px;
    margin-left: 40px;
 }
 
@@ -33,4 +34,35 @@
    margin: auto;
    border-radius: 10px;
    width: 50.5%;
+}
+
+@media only screen and (max-width: 720px) {
+   .island-word-container h1 {
+      font-size: 40px;
+      margin-left: 10px;
+   }
+   .info-row {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+      align-items: center;
+   }
+   .island-video {
+      margin: auto;
+      border-radius: 10px;
+      width: 95%;
+   }
+   .iframe {
+      width: 95%;
+   }
+   .flavor-text h4 {
+      margin-top: 40px;
+      margin-bottom: 30px;
+      margin-left: 10px;
+      margin-right: 0px;
+      width: auto;
+   }
+   .island-info-block-container {
+      padding-bottom: 80px;
+   }
 }

@@ -13,7 +13,6 @@ import Experience from "../Components/Experience";
 const Index = () => {
    return (
       <div>
-         {/* <NewHeader /> */}
          <Header />
          <UnderHeader />
          <InfoBlock />

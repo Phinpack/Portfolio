@@ -83,3 +83,45 @@
    background-color: #3498db;
    transition: background-color 0.2s ease;
 }
+@media only screen and (max-width: 1065px) {
+   .whole-container {
+      display: flex;
+      flex-direction: column;
+   }
+   .whole-container h2 {
+      padding-left: 50px;
+      font-size: 50px;
+      margin-bottom: 70px;
+   }
+   .form-no-submit {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+}
+@media only screen and (max-width: 643px) {
+   .whole-container {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      color: white;
+   }
+   .whole-container h2 {
+      font-size: 50px;
+      margin-bottom: 20px;
+   }
+   .form-no-submit textarea {
+      margin-bottom: 40px;
+      width: 400px;
+   }
+}
+@media only screen and (max-width: 450px) {
+   .form-no-submit input {
+      margin-bottom: 20px;
+      width: 275px;
+   }
+
+   .form-no-submit textarea {
+      margin-bottom: 20px;
+      width: 275px;
+   }
+}

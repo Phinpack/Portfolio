@@ -53,3 +53,41 @@ a {
    text-decoration: none;
    color: hsla(217, 94%, 27%, 1);
 }
+
+@media only screen and (max-width: 1799px) {
+   .experience-content h4 {
+      font-size: 20px;
+   }
+
+   .unity-logo {
+      top: 1960px;
+      left: 100px;
+      position: absolute;
+      width: 250px;
+   }
+
+   .react-logo {
+      top: 1930px;
+      right: 100px;
+      position: absolute;
+      width: 300px;
+   }
+
+   .unity-logo {
+      display: none;
+   }
+
+   .react-logo {
+      display: none;
+   }
+}
+@media only screen and (max-width: 426px) {
+   .experience-container h1 {
+      font-size: 60px;
+   }
+   .experience-content h4 {
+      color: rgb(128, 128, 128);
+      margin: 30px 10px 30px 10px;
+      font-size: 20px;
+   }
+}

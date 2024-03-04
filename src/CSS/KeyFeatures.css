@@ -29,3 +29,27 @@
    max-width: 500px;
    margin: 0 auto;
 }
+
+@media only screen and (max-width: 1257px) {
+   .features-container > div {
+      flex: 0 0 calc(50% - 10px);
+      margin: 10px;
+      margin-bottom: 100px;
+      box-sizing: border-box;
+   }
+}
+
+@media only screen and (max-width: 426px) {
+   .features-container > div {
+      flex: 0 0 calc(100% - 20px);
+   }
+   .features-container {
+      margin: auto;
+   }
+   .features-container h1 {
+      font-size: 40px;
+   }
+   .features-container h5 {
+      font-size: 20px;
+   }
+}

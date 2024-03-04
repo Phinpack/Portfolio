@@ -8,3 +8,7 @@
 .App {
    font-family: "Monserrat";
 }
+
+.body {
+   width: 100%;
+}

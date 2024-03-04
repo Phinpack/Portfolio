@@ -10,7 +10,7 @@ const IslandInfo = ({ videoSource, title, texts, googleURL }) => {
    return (
       <div className="island-info-block-container ">
          <div className="island-word-container">
-            <h1 style={{ marginBottom: "40px", fontSize: "60px" }}>{title}</h1>
+            <h1>{title}</h1>
             <div className="info-row">
                {videoSource ? (
                   <video className="island-video" controls>
@@ -19,6 +19,7 @@ const IslandInfo = ({ videoSource, title, texts, googleURL }) => {
                   </video>
                ) : (
                   <iframe
+                     className="iframe"
                      style={{ borderRadius: "10px" }}
                      src={googleURL}
                      title="Google Slide Embed"
